@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/amirmknv/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/amirmknv/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
@@ -8,4 +9,7 @@
   },
   "author": "",
   "license": "ISC"
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+} 
 }
