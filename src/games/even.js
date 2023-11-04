@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-
-import {userName} from "../src/cli.js";
+import readlineSync from 'readline-sync';
 
 const gameResult = (number) => {
 	console.log('Answer "yes" if the number is even, otherwise answer "no".');
