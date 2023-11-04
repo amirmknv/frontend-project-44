@@ -1,19 +1,15 @@
 #!/usr/bin/env node
 
 import {userName} from "../src/cli.js";
-import readlineSync from 'readline-sync';
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
+const gameResult = (number) => {
+	console.log('Answer "yes" if the number is even, otherwise answer "no".');
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 console.log("Question: " + randomNumber);
-
 const answer = readlineSync.question("Your answer: ");
 
 const evenNum = (randomNumber % 2 === 0);
 const oddNum = (randomNumber % 2 !== 0);
-
-export const gameResult = (number) => {
 	if (number = evenNum) && (answer === "yes") {
 	console.log("Correct")
 	};
@@ -29,4 +25,4 @@ export const gameResult = (number) => {
 	
 };
 
-console.log(findNumber);
+export default gameResult;

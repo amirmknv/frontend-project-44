@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-import {gameResult} from ".. src/games/even.js"; 
-
+import {userName} from "../src/cli.js";
+import {gameResult} from "..src/games/even.js"; 
