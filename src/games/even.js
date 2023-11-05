@@ -19,17 +19,17 @@ export const gameResult = () => {
 	if (number % 2 === 0 && userAnswer === "yes") {
 		console.log("Correct!")
 	};
-	if  (number % 2 === 0 && userAnswer === "no") {
+		else if  (number % 2 === 0 && userAnswer === "no") {
 		console.log(`${userAnswer} is wrong answer ;\(. Correct answer was ${opposite}.\n Let's try again, ${userName}!`);
 		return;
 	};
-	if (number % 2 !== 0 && userAnswer === "no") {
+		else if (number % 2 !== 0 && userAnswer === "no") {
 		console.log("Correct!")
 	};
-	if (number % 2 !== 0 && userAnswer === "yes") {
+		else if (number % 2 !== 0 && userAnswer === "yes") {
 		console.log(`${userAnswer} is wrong answer ;\(. Correct answer was ${opposite}.\n Let's try again, ${userName}!`); 
 		return;
 	};
-	};
 	console.log(`Congratulations, ${userName}!`);
+	};
 };
