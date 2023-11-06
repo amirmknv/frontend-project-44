@@ -19,8 +19,7 @@ export const gameResult = () => {
 	const isEven = number % 2 === 0;
 	const correctAnswer = isEven ? "yes" : "no";
 	if (correctAnswer !== userAnswer) {
-	 console.log(`${userAnswer} is wrong answer ;\(. 
-         Correct answer was ${correctAnswer}.\n Let's try again, ${userName}!`);
+	 console.log(`${userAnswer} is wrong answer ;\(. Correct answer was ${correctAnswer}.\nLet's try again, ${userName}!`);
 	return;
 	}
 
