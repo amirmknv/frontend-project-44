@@ -4,20 +4,34 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question("May I have your name? ");
 console.log("Hello, " + userName + "!");
 
-const getRandomInt =(max) => {
-	return Math.floor(Math.random() * max);
-};
+const getRandomNum = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
 
-const number = getRandomInt(100);
 
 export const expressionResult = () => {
-console.log("What is the result of the expression?");
+ console.log("What is the result of the expression?");
+ const mathSymbols = ['+', '-', '*']; 
+};
 
-for (let i = 0; i < 3; i += 1) {
- let textNum = number.toString();
- console.log("Question: " + (textNum + ("-" ||" +" ||"*") + textNum);
- const userAnswer = readlineSync.question("Your answer: ");
- const correctAnswer = 
 
-	};
+const getRandomSymbol = () => {
+ const randomNum = getRandomNum[0, 2];
+ return mathSymbols[randomNum];
+};
+
+
+const calculate = (symbol, randomNum1, randomNum2) => {
+ let result;
+	if (symbol === "+") {
+	 result = randomNum1 + randomNum2
+	} else if (symbol === "-") {
+	 result = randomNum1 - randomNum2
+	} else if (symbol === "*") {
+	 result = randomNum1 * randomNum2
+	}
+ return result;
+};
+
+
+
+
 };
