@@ -13,9 +13,9 @@ export const expressionResult = () => {
 };
 
 
-const getRandomSymbol = () => {
+const getRandomOperator = () => {
  const randomNum = getRandomNum[0, 2];
- return mathSymbols[randomNum];
+ return getRandomOperator[randomNum];
 };
 
 
@@ -31,7 +31,17 @@ const calculate = (symbol, randomNum1, randomNum2) => {
  return result;
 };
 
-
-
+const getQuestionAnswer = () => {
+ const randomNum1 = getRandomNum(10, 20);
+ const randomNum2 = getRandomNum(2-19);
+ const getRandomOperator = getRandomOperator();
+ const question = `Question: ${randomNumber1} ${randomOperator} ${randomNumber2}`;
+ const rightNumber = calculate(randomOperator, randomNum1, randomNum2);
+ const rightAnswer = rightNumber.toString();
+ const result = [question, rightAnswer];
+  return result;
+};
 
 };
+
+export default getQuestionAnswer;

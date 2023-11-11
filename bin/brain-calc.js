@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import {expressionResult} from "..src/games/calc.js";
-expressionResult();
+import {getQuestionAnswer} from "..src/games/calc.js";
+getQuestionAnswer();
