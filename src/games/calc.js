@@ -6,22 +6,18 @@ console.log("Hello, " + userName + "!");
 
 const getRandomInt =(max) => {
 	return Math.floor(Math.random() * max);
-
+};
 
 const number = getRandomInt(100);
-const mathOperation1 = (number + number);
-const mathOperation2 = (number - number);
-const mathOperation3 = (number * number);
-
 
 export const expressionResult = () => {
 console.log("What is the result of the expression?");
 
 for (let i = 0; i < 3; i += 1) {
-
- console.log("Question: " + (mathOperation1 || mathOperation2 || mathOperation3);
+ let textNum = number.toString();
+ console.log("Question: " + (textNum + ("-" ||" +" ||"*") + textNum);
  const userAnswer = readlineSync.question("Your answer: ");
  const correctAnswer = 
 
-	}
+	};
 };
