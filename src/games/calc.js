@@ -7,7 +7,7 @@ console.log("Hello, " + userName + "!");
 
 const getRandomNum = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
 
-const expressionResult = () => {
+export const expressionResult = () => {
  console.log("What is the result of the expression?");
  const mathSymbols = ['+', '-', '*']; 
 };
@@ -38,7 +38,7 @@ const getQuestionAnswer = () => {
  const question = `Question: ${randomNum1} ${randomOperator} ${randomNum2}`;
  const rightNumber = calculate(randomOperator, randomNum1, randomNum2);
  const rightAnswer = rightNumber.toString();
- const result = [question, rightAnswer];
+ const result = question + rightAnswer;
   return result;
 };
 
