@@ -4,10 +4,10 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question("May I have your name? ");
 console.log("Hello, " + userName + "!");
 
+
 const getRandomNum = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
 
-
-export const expressionResult = () => {
+const expressionResult = () => {
  console.log("What is the result of the expression?");
  const mathSymbols = ['+', '-', '*']; 
 };
@@ -15,7 +15,7 @@ export const expressionResult = () => {
 
 const getRandomOperator = () => {
  const randomNum = getRandomNum[0, 2];
- return getRandomOperator[randomNum];
+ return mathSymbols[randomNum];
 };
 
 
@@ -34,8 +34,8 @@ const calculate = (symbol, randomNum1, randomNum2) => {
 const getQuestionAnswer = () => {
  const randomNum1 = getRandomNum(10, 20);
  const randomNum2 = getRandomNum(2-19);
- const getRandomOperator = getRandomOperator();
- const question = `Question: ${randomNumber1} ${randomOperator} ${randomNumber2}`;
+ const randomOperator = getRandomOperator();
+ const question = `Question: ${randomNum1} ${randomOperator} ${randomNum2}`;
  const rightNumber = calculate(randomOperator, randomNum1, randomNum2);
  const rightAnswer = rightNumber.toString();
  const result = [question, rightAnswer];
