@@ -5,38 +5,41 @@ const userName = readlineSync.question("May I have your name? ");
 console.log("Hello, " + userName + "!");
 
 
-const getRandomNum = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
-
-export const expressionResult = () => {
- console.log("What is the result of the expression?");
- const mathSymbols = ['+', '-', '*']; 
+const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
 };
 
 
+console.log("What is the result of the expression?"); 
+
+
+
 const getRandomOperator = () => {
- const randomNum = getRandomNum[0, 2];
- return mathSymbols[randomNum];
+const randomNum = getRandomInt[0, 2];
+const mathSymbols = ['+', '-', '*'];
+return mathSymbols[randomNum];
 };
 
 
 const calculate = (symbol, randomNum1, randomNum2) => {
  let result = 0;
 	if (symbol === "+") {
-	 result = randomNum1 + randomNum2
+	 result = randomNum1 + randomNum2;
 	} else if (symbol === "-") {
-	 result = randomNum1 - randomNum2
+	 result = randomNum1 - randomNum2;
 	} else if (symbol === "*") {
-	 result = randomNum1 * randomNum2
+	 result = randomNum1 * randomNum2;
 	}
  return result;
 };
 
 const getQuestionAnswer = () => {
- const randomNum1 = getRandomNum(10, 20);
- const randomNum2 = getRandomNum(2, 19);
- const randomOperator = getRandomOperator();
- const question = `Question: ${randomNum1} ${randomOperator} ${randomNum2}`;
- const rightNumber = calculate(randomOperator, randomNum1, randomNum2);
+ const randomNum1 = getRandomInt(10, 20);
+ const randomNum2 = getRandomInt(2, 19);
+ const symbol = getRandomOperator();
+ const question = `Question: ${randomNum1} ${symbol} ${randomNum2}`;
+ console.log(question);
+ const rightNumber = calculate(symbol, randomNum1, randomNum2);
  const rightAnswer = rightNumber.toString();
  return rightAnswer;
 };
