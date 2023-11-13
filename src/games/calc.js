@@ -20,7 +20,7 @@ const getRandomOperator = () => {
 
 
 const calculate = (symbol, randomNum1, randomNum2) => {
- let result;
+ let result = 0;
 	if (symbol === "+") {
 	 result = randomNum1 + randomNum2
 	} else if (symbol === "-") {
@@ -33,15 +33,13 @@ const calculate = (symbol, randomNum1, randomNum2) => {
 
 const getQuestionAnswer = () => {
  const randomNum1 = getRandomNum(10, 20);
- const randomNum2 = getRandomNum(2-19);
+ const randomNum2 = getRandomNum(2, 19);
  const randomOperator = getRandomOperator();
  const question = `Question: ${randomNum1} ${randomOperator} ${randomNum2}`;
  const rightNumber = calculate(randomOperator, randomNum1, randomNum2);
  const rightAnswer = rightNumber.toString();
- const result = question + rightAnswer;
-  return result;
+ return rightAnswer;
 };
 
-};
 
 export default getQuestionAnswer;
