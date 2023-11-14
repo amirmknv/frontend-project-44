@@ -5,9 +5,7 @@ const userName = readlineSync.question("May I have your name? ");
 console.log("Hello, " + userName + "!");
 
 
-const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max);
-};
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
 
 
 console.log("What is the result of the expression?"); 
@@ -15,7 +13,7 @@ console.log("What is the result of the expression?");
 
 
 const getRandomOperator = () => {
-const randomNum = getRandomInt[0, 2];
+const randomNum = getRandomInt(0, 2);
 const mathSymbols = ['+', '-', '*'];
 return mathSymbols[randomNum];
 };
