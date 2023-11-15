@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import getQuestionAnswer from "../src/games/calc.js";
-getQuestionAnswer();
+import gameLogic from "../src/games/calc.js";
+gameLogic(gameTask, gameStart);

@@ -1,16 +1,10 @@
-import readlineSync from 'readline-sync';
-
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question("May I have your name? ");
-console.log("Hello, " + userName + "!");
+import gameLogic from "../index.js";
+import getRandomInt from "../getRandomInt.js";
 
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
 
 
-console.log("What is the result of the expression?"); 
-
-
+const gameTask = "What is the result of the expression?";
 
 const getRandomOperator = () => {
 const randomNum = getRandomInt(0, 2);
@@ -31,16 +25,16 @@ const calculate = (symbol, randomNum1, randomNum2) => {
  return result;
 };
 
-const getQuestionAnswer = () => {
+const gameStart = () => {
  const randomNum1 = getRandomInt(10, 20);
  const randomNum2 = getRandomInt(2, 19);
  const symbol = getRandomOperator();
  const question = `Question: ${randomNum1} ${symbol} ${randomNum2}`;
- console.log(question);
- const rightNumber = calculate(symbol, randomNum1, randomNum2);
- const rightAnswer = rightNumber.toString();
- return [question, rightAnswer];
+ const answer = calculate(symbol, randomNum1, randomNum2);
+ return [question, answer];
 };
 
 
-export default getQuestionAnswer;
+export default () => { 
+ gameLogic(gameTask, gameStart); 
+};
