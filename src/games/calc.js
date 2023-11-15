@@ -39,7 +39,7 @@ const getQuestionAnswer = () => {
  console.log(question);
  const rightNumber = calculate(symbol, randomNum1, randomNum2);
  const rightAnswer = rightNumber.toString();
- return rightAnswer;
+ return [question, rightAnswer];
 };
 
 
