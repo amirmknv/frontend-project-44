@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import { gameResult } from "../src/games/even.js";
-gameResult();
+import gameLogic from "../src/games/even.js";
+gameLogic();
