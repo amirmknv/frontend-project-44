@@ -3,4 +3,9 @@
 
 <a href="https://codeclimate.com/github/amirmknv/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/40736719e90fe91f998f/maintainability" /></a>
 
+
+# Brain Even Game asciinema recording:
 https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
+
+# Brain Calc Game asciinema recording: 
+https://asciinema.org/a/zbkOpXOY3GjNEWOW1DTw8mkdC
