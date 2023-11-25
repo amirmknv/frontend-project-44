@@ -23,7 +23,7 @@ const arithmeticProgression = () => {
  let result = "";
  let i = number1;
  while (i <= number2) {
-  result = `${result} $ {i}`;
+  result = `${result} ${i}`;
   i += counter;
   }
 
