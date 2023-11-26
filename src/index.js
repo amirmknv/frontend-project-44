@@ -18,7 +18,7 @@ for (let i = 0; i < rounds; i += 1) {
  if ((userAnswer) !== String(answer)) {
   console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
   console.log(`Let's try again, ${userName}!`);
-  break;
+  return;
   }
   console.log('Correct!'); 
 }

@@ -9,3 +9,9 @@ https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
 
 # Brain Calc Game asciinema recording: 
 https://asciinema.org/a/zbkOpXOY3GjNEWOW1DTw8mkdC
+
+# Brain GCD Game asciinema recording:
+https://asciinema.org/a/Pq8YOb6rmG29KnR2zn0ZdigKz
+
+# Brain Prime Game asciinema recording:
+https://asciinema.org/a/Oglrak4dhFkeLua6aLIoSGcan
