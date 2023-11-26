@@ -10,6 +10,7 @@ const gameLogic = (gameTask, gameStart) => {
 
 
 
+
 for (let i = 0; i < rounds; i += 1) {
  const [question, answer] = gameStart();
  console.log(`Question: ${question}`);

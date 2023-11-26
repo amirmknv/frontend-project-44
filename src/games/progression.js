@@ -21,17 +21,16 @@ const gameStart = () => {
   let result = [];
   let i = number1;
   while (i < number2) {
-  result = `${result} ${i}`;
+  result = [...result, i];
   i += counter;
   }
   return result;
 };
 
  const progression = arithmeticProgression(number1, number2);
- const splitResult = progression.split(" ");
- const answer = splitResult[randomIndex];
- splitResult[randomIndex] = missingElement;
- const question = splitResult.join(" ").trim();
+ const answer = progression[randomIndex].toString();
+ progression[randomIndex] = missingElement;
+ const question = progression.join(" ").trim();
  return [question, answer];
 };
 
