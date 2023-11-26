@@ -20,9 +20,9 @@ const gameStart = () => {
 
 
 const arithmeticProgression = () => {
- let result = "";
+ let result = [];
  let i = number1;
- while (i <= number2) {
+ while (i < number2) {
   result = `${result} ${i}`;
   i += counter;
   }
@@ -33,7 +33,7 @@ const arithmeticProgression = () => {
 const progression = arithmeticProgression(number1, number2);
 const splitResult = progression.split(" ");
 
-const answer = splitResult.at(randomIndex);
+const answer = splitResult[randomIndex];
 splitResult[randomIndex] = missingElement;
 const question = splitResult.join(" ").trim();
 return [question, answer];
