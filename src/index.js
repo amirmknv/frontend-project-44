@@ -9,6 +9,7 @@ const gameLogic = (gameTask, gameStart) => {
   console.log(gameTask);
 
 
+
 for (let i = 0; i < rounds; i += 1) {
  const [question, answer] = gameStart();
  console.log(`Question: ${question}`);
@@ -16,7 +17,7 @@ for (let i = 0; i < rounds; i += 1) {
  if ((userAnswer) !== String(answer)) {
   console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
   console.log(`Let's try again, ${userName}!`);
-  return;
+  break;
   }
   console.log('Correct!'); 
 }
