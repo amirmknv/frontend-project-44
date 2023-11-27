@@ -21,7 +21,7 @@ const gameStart = () => {
   let result = [];
   let i = number1;
   while (i < number2) {
-  result = [...result, i];
+  result.push(i);
   i += counter;
   }
   return result;
