@@ -28,7 +28,7 @@ const gameStart = () => {
 };
 
  const progression = arithmeticProgression(number1, number2);
- const answer = progression[randomIndex].toString();
+ const answer = progression[randomIndex];
  progression[randomIndex] = missingElement;
  const question = progression.join(" ").trim();
  return [question, answer];
