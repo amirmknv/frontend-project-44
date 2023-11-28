@@ -13,7 +13,7 @@ const maxLength = 19;
 const gameStart = () => {
  const number1 = getRandomInt(1, 100);
  const number2 = (number1 + maxLength);
- const randomIndex = getRandomInt(0, number2 - 1);
+ const randomIndex = getRandomInt(number1, number2 - 1);
  const counter = getRandomInt(minCounter, maxCounter);
  const missingElement = ".."; 
 
