@@ -30,6 +30,7 @@ const gameStart = () => {
  const progression = arithmeticProgression();
  const answer = progression[randomIndex].toString();
  progression[randomIndex] = missingElement;
+ console.log(progression[randomIndex]);
  const question = progression.join(" ").trim();
  return [question, answer];
 };
