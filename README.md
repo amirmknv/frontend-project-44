@@ -15,3 +15,6 @@ https://asciinema.org/a/Pq8YOb6rmG29KnR2zn0ZdigKz
 
 # Brain Prime Game asciinema recording:
 https://asciinema.org/a/Oglrak4dhFkeLua6aLIoSGcan
+
+# Brain Progression Game asciinema recording:
+https://asciinema.org/a/mYD7iV412CvXHih1tUzqDafaf
