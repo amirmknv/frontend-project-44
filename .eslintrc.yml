@@ -15,4 +15,5 @@ parserOptions:
   ecmaVersion: latest
 
 rules:
+  import/extensions: # FIXME: remove when rule will be adj
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
