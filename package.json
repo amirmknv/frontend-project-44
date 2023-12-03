@@ -23,6 +23,7 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "eslint": "^8.52.0"
+    "eslint": "^8.52.0",
+    "eslint-plugin-jest": "^27.6.0"
   }
 }
