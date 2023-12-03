@@ -3,8 +3,7 @@ import getRandomInt from "../getRandomInt.js";
 
 const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameStart = () => {
-  const isPrime = (num) => {
+ const isPrime = (num) => {
   if (num < 2) {
    return false;
     }
@@ -16,15 +15,14 @@ const gameStart = () => {
   }
 
   return true;
-   };
+ }; 
  
-
-
+ const gameStart = () => {
  const question = getRandomInt(1, 100);
  const answer = isPrime(question) ? "yes" : "no";
  return [question, answer];
- };
-
+ 
+};
 
 
 export default () => {
