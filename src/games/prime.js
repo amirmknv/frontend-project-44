@@ -13,13 +13,14 @@ const gameStart = () => {
 
   return true;
    };
-  };
+ 
 
 
  const question = getRandomInt(1, 100);
  const answer = isPrime(question) ? "yes" : "no";
  return [question, answer];
  };
+
 
 
 export default () => {
